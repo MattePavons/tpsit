@@ -1,93 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>div e css</title>
-   <style>
-        #gutta1{
-            background-color: #ffffff;
-                width: 200px;
-                height: 200px;
-                padding: 50px;
-                margin: 10px;
-                border: 1px solid black;
-                
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div e css</title>
+   <style>
+        #gutta1{
+            background-color: #ffffff;
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                margin: 10px;
+                border: 1px solid black;
+               
 
-        }
-       #gutta2{
-               background-color: #ffffff;
-                width: 200px;
-                height: 200px;
-                padding: 50px;
-                margin: 10px;
-                border: 1px solid black;
+        }
+       #gutta2{
+               background-color: #ffffff;
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                margin: 10px;
+                border: 1px solid black;
 
-        }
-          #gutta3{
-              background-color: #ffffff;
-                width: 200px;
-                height: 200px;
-                padding: 50px;
-                margin: 10px;
-                border: 1px solid black;
+        }
+          #gutta3{
+              background-color: #ffffff;
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                margin: 10px;
+                border: 1px solid black;
 
-        }
-          #gutta4{
-              background-color: #ffffff;
-                width: 200px;
-                height: 200px;
-                padding: 50px;
-                margin: 10px;
-                border: 1px solid black;
+        }
+          #gutta4{
+              background-color: #ffffff;
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                margin: 10px;
+                border: 1px solid black;
 
-        }
-          #gutta5{
-            background-color: #ffffff;
-                width: 200px;
-                height: 200px;
-                padding: 50px;
-                margin: 10px;
-                border: 1px solid black;
+        }
+          #gutta5{
+            background-color: #ffffff;
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                margin: 10px;
+                border: 1px solid black;
 
-        }
+        }
 
-       
-   </style>
+       
+   </style>
 
 
 
 </head>
 <body>
-    <div id="gutta1">                                                         
-<p>Albert Einstein
-"La logica ti porterà da A a B. L'immaginazione ti porterà dappertutto."</p>
+  <div id="gutta1">                                                        
+  <p id="testo1">Albert Einstein
+  "La logica ti porterà da A a B. L'immaginazione ti porterà dappertutto."</p>
+ 
+    <button onclick="nascondiTesto()">Nascondi Testo</button>
 
-    
-    </div>
+ 
+  <script>
+    function nascondiTesto()
+    {
+    const testo = document.getElementById("testo1");
+    testo.style.display = "none";
+    // Nasconde il testo impostando display a 'none'
+    }
+  </script>
 
-    <div id="gutta2">                                                         
-<p>Stephen Hawking
-"L'intelligenza è la capacità di adattarsi al cambiamento."</p>
+  </div>
 
-    
-    </div>
-        <div id="gutta3">                                                         
-<p>Carl Sagan
-"La scienza non è solo un insieme di conoscenze, ma un modo di pensare."</p>
+  <div id="gutta1">                                                        
+  <p id="testo2">Daniele porcaro
+   "Sai cose la morra cinese?"</p>
+ 
+    <button onclick="nascondiTesto2()">Nascondi Testo</button>
 
-    
-    </div>
-        <div id="gutta4">                                                         
-<p>Marie Curie
-"Nella vita non c'è nulla da temere, solo da capire. Ora è il momento di capire di più, così potremo temere di meno."</p>
+ 
+  <script>
+    function nascondiTesto2()
+    {
+    const testo = document.getElementById("testo2");
+    testo.style.display = "none";
+    // Nasconde il testo impostando display a 'none'
+    }
+  </script>
+  </div>
 
-    
-    </div>
-        <div id="gutta5">                                                         
-<p>Richard Feynman
-"La scienza è il tentativo di far sì che non ti ingannino da solo."</p>
-
-    
-    </div>
