@@ -5,18 +5,21 @@
 <head>
 
     <meta charset="UTF-8">
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>Verifica Simulazione</title>
 
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verifica Simulazione</title>
+<p>con ale guda</p>
+
+
 </head>
+
 <body>
 
     <h1>Verifica Simulazione</h1>
-    <p>in coppia con alessandro guttadauro</p>
+
     <div class="container">
+
         <div id="numero" class="result"></div>
         <div id="parita" class="result"></div>
         <div id="primo" class="result"></div>
@@ -25,23 +28,32 @@
         <div id="complemento" class="result"></div>
         <div id="somma" class="result"></div>
         <div id="moltiplica" class="result"></div>
-        
 
     </div>
-<body>
 
 
 
     <script>
 
+       
+
         function isPrime(n) {
+
             if (n < 2) return false;
+
             for (let i = 2; i <= Math.sqrt(n); i++) {
+
                 if (n % i === 0) return false;
 
             }
+
             return true;
+
         }
+
+
+
+        
 
         function generaNumero() {
 
@@ -53,20 +65,32 @@
             const complemento = 1000 - numero;
             const somma = numero - 1 + numero + 1;
             const moltiplica = (numero * 3.14).toFixed(2);
-            
 
 
-          
+
+           
+
             document.getElementById("numero").innerHTML = `Numero generato: <strong>${numero}</strong>`;
             document.getElementById("parita").innerHTML = `Il numero è: <strong>${pariDispari}</strong>`;
             document.getElementById("primo").innerHTML = `Stato: <strong>${primo}</strong>`;
             document.getElementById("doppio").innerHTML = `Doppio: <strong>${doppio}</strong>`;
             document.getElementById("meta").innerHTML = `Metà intera: <strong>${metaIntera}</strong>`;
-            document.getElementById("compleento").innerHTML = `Complemento (1000 - n): <strong>${complemento}</strong>`;
+            document.getElementById("complemento").innerHTML = `Complemento (1000 - n): <strong>${complemento}</strong>`;
             document.getElementById("somma").innerHTML = `Somma del precedente e successivo: <strong>${somma}</strong>`;
             document.getElementById("moltiplica").innerHTML = `Moltiplicato per 3.14: <strong>${moltiplica}</strong>`;
+
         }
+
+
+
+        
+
         setInterval(generaNumero, 5000);
+
+
+
+       
+
         generaNumero();
 
     </script>
