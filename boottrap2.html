@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sicurezza Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ3QJb6i0lP3CC8yXoBYI+8hWe7pQbZx8xjjlfB4CkmvvnD9fRPwD6D8EvN7" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sicurezza Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tips">Consigli</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prevenzione">Prevenzione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusioni">Conclusioni</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>La Sicurezza Online</h1>
+            <p class="lead">Proteggere la tua privacy e le tue informazioni è fondamentale nell'era digitale</p>
+        </div>
+    </header>
+
+    <!-- Sezione Consigli -->
+    <section id="tips" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Consigli per una Navigazione Sicura</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Utilizza password complesse e uniche per ogni sito.</li>
+                        <li class="list-group-item">Abilita l'autenticazione a due fattori (2FA) dove possibile.</li>
+                        <li class="list-group-item">Evita di cliccare su link sospetti in email o messaggi.</li>
+                        <li class="list-group-item">Aggiorna regolarmente il sistema operativo e le applicazioni.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400x300" alt="Sicurezza Online" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Prevenzione -->
+    <section id="prevenzione" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Prevenire le Minacce Online</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Antivirus">
+                        <div class="card-body">
+                            <h5 class="card-title">Utilizzare un buon software antivirus</h5>
+                            <p class="card-text">I software antivirus possono rilevare e proteggere il tuo dispositivo da malware e minacce online.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="VPN">
+                        <div class="card-body">
+                            <h5 class="card-title">Usare una VPN</h5>
+                            <p class="card-text">Una VPN crittografa il tuo traffico internet e ti permette di navigare in modo sicuro e privato.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Backup">
+                        <div class="card-body">
+                            <h5 class="card-title">Eseguire backup regolari</h5>
+                            <p class="card-text">Eseguire backup regolari dei tuoi dati ti permette di evitare perdite in caso di attacchi ransomware.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal di Avviso -->
+    <div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="warningModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="warningModalLabel">Attenzione!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Fai attenzione alle truffe online e alle informazioni personali che condividi su Internet.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione Conclusioni -->
+    <section id="conclusioni" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Conclusioni</h2>
+            <p class="lead text-center">La sicurezza online è un aspetto fondamentale della vita digitale. Proteggere i propri dati e prendere misure di sicurezza adeguate può fare la differenza tra una navigazione tranquilla e una minaccia alla privacy. Seguendo le giuste pratiche, puoi prevenire la maggior parte dei pericoli online.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Sicurezza Online. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybP5K5mA1z1ocYhaj8slrYVxwWjttjqOSwFfjLFPJz03A8I3I" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqT+Yw57w7uy1c6Oe/4lG6RS9TqzI/61jtgoD1f4xy6xH" crossorigin="anonymous"></script>
+</body>
+</html>
 
