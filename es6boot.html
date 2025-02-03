@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ Casareccia</title>
+  <!-- Inclusione di Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Inclusione di Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Stili inline semplici, come se fossero fatti in fretta */
+    body { background-color: #f0f0f0; }
+    h1 { color: #333; }
+    .accordion-button { font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+  <div class="container" style="margin-top:20px;">
+    <h1 class="text-center">FAQ - Domande e Risposte</h1>
+    <div class="accordion" id="accordionCasareccio">
+      <!-- Sezione 1: Aperta di default -->
+      <div class="accordion-item" style="margin-top: 10px;">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            <i class="bi bi-question-circle-fill" style="margin-right: 5px;"></i>
+            Domanda 1: Che cos'è il reso?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+          <div class="accordion-body">
+            Il reso è la possibilità di restituire un prodotto entro 30 giorni se non sei soddisfatto.
+          </div>
+        </div>
+      </div>
+      <!-- Sezione 2 -->
+      <div class="accordion-item" style="margin-top: 10px;">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            <i class="bi bi-question-circle" style="margin-right: 5px;"></i>
+            Domanda 2: Come tracciare l'ordine?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+          <div class="accordion-body">
+            Dopo l'acquisto, ricevi un codice via email che puoi usare per tracciare il tuo ordine.
+          </div>
+        </div>
+      </div>
+      <!-- Sezione 3 -->
+      <div class="accordion-item" style="margin-top: 10px;">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <i class="bi bi-question-circle" style="margin-right: 5px;"></i>
+            Domanda 3: Quali metodi di pagamento sono accettati?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+          <div class="accordion-body">
+            Accettiamo carte di credito, PayPal e bonifici bancari.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inclusione di Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
