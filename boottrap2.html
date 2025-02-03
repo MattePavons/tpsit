@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sicurezza Online</title>
+    <!-- Collegamento a Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .img-fluid {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Sicurezza Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sezione1">Cos'è la Sicurezza Online?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sezione2">Minacce e Protezione</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sezione3">Prevenzione</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sezione 1: Cos'è la Sicurezza Online -->
+    <div id="sezione1" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Cos'è la Sicurezza Online?</h2>
+                <p>La sicurezza online è fondamentale per proteggere le informazioni personali, bancarie e aziendali. Con l'aumento dei crimini informatici, è essenziale adottare misure di protezione adeguate.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Sicurezza Online">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione 2: Minacce e Protezione -->
+    <div id="sezione2" class="container my-5">
+        <h2>Le principali minacce alla sicurezza online</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Phishing</h4>
+                <p>Il phishing è una truffa in cui un malintenzionato cerca di ottenere informazioni sensibili come username e password, fingendosi una fonte affidabile.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Malware</h4>
+                <p>Il malware è software dannoso che può infettare il tuo dispositivo, rubando informazioni o danneggiando i dati. Può essere distribuito tramite allegati email o download sospetti.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Ransomware</h4>
+                <p>Un ransomware cripta i dati del tuo dispositivo e chiede un riscatto per decriptarli. È una minaccia molto pericolosa, soprattutto per le aziende.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione 3: Prevenzione -->
+    <div id="sezione3" class="container my-5">
+        <h2>Come proteggersi dalle minacce online</h2>
+        <p>Adottare delle pratiche sicure può fare la differenza nella protezione delle informazioni personali. Ecco alcuni consigli:</p>
+        <ul class="list-group">
+            <li class="list-group-item">Usa password complesse e cambia regolarmente le tue credenziali.</li>
+            <li class="list-group-item">Abilita l'autenticazione a due fattori (2FA) quando possibile.</li>
+            <li class="list-group-item">Non cliccare su link sospetti nelle email o nei messaggi.</li>
+            <li class="list-group-item">Aggiorna regolarmente il sistema operativo e le applicazioni.</li>
+            <li class="list-group-item">Utilizza software antivirus e firewall aggiornati.</li>
+        </ul>
+    </div>
+
+    <!-- Griglia di articoli correlati -->
+    <div class="container my-5">
+        <h2>Articoli correlati</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Articolo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Guida al Phishing</h5>
+                        <p class="card-text">Scopri come riconoscere e difenderti dalle truffe online di phishing.</p>
+                        <a href="#" class="btn btn-primary">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Articolo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cos'è il Ransomware?</h5>
+                        <p class="card-text">Impara cosa è il ransomware e come difenderti da questo tipo di attacco informatico.</p>
+                        <a href="#" class="btn btn-primary">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Articolo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proteggere la tua Privacy Online</h5>
+                        <p class="card-text">Scopri come proteggere la tua privacy online con semplici ma efficaci accorgimenti.</p>
+                        <a href="#" class="btn btn-primary">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Sicurezza Online. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Collegamento ai JS di Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
