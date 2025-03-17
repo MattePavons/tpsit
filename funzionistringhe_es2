@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esercizio 2: Inverti la Stringa</title>
+  <script>
+    // Funzione per invertire la stringa
+    function reverseString() {
+      // Recupera il valore inserito nell'input
+      var inputString = document.getElementById("inputStringa").value;
+      // Inverte la stringa: divide in array, inverte e ricompone in stringa
+      var reversedString = inputString.split('').reverse().join('');
+      // Visualizza il risultato nell'elemento con id "risultato"
+      document.getElementById("risultato").innerText = "La stringa invertita è: " + reversedString;
+    }
+  </script>
+</head>
+<body>
+  <h1>Esercizio 2: Inverti la Stringa</h1>
+  <form onsubmit="reverseString(); return false;">
+    <label for="inputStringa">Inserisci una stringa:</label>
+    <input type="text" id="inputStringa" name="inputStringa" required>
+    <button type="submit">Inverti</button>
+  </form>
+  <p id="risultato"></p>
+</body>
+</html>
