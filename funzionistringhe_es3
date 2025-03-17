@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esercizio 3: Unisci le Stringhe</title>
+  <script>
+    // Funzione per concatenare due stringhe
+    function concatenaStringhe() {
+      // Recupera i valori degli input
+      var stringa1 = document.getElementById("stringa1").value;
+      var stringa2 = document.getElementById("stringa2").value;
+      // Unisce le stringhe
+      var risultatoConcat = stringa1 + stringa2;
+      // Visualizza il risultato nell'elemento con id "risultato"
+      document.getElementById("risultato").innerText = "Le stringhe unite sono: " + risultatoConcat;
+    }
+  </script>
+</head>
+<body>
+  <h1>Esercizio 3: Unisci le Stringhe</h1>
+  <form onsubmit="concatenaStringhe(); return false;">
+    <label for="stringa1">Inserisci la prima stringa:</label>
+    <input type="text" id="stringa1" name="stringa1" required>
+    <br><br>
+    <label for="stringa2">Inserisci la seconda stringa:</label>
+    <input type="text" id="stringa2" name="stringa2" required>
+    <br><br>
+    <button type="submit">Concatena</button>
+  </form>
+  <p id="risultato"></p>
+</body>
+</html>
