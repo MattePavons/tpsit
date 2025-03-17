@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esercizio 1: Lunghezza della Stringa</title>
+  <script>
+    // Funzione per calcolare la lunghezza della stringa inserita
+    function calcolaLunghezza() {
+      // Recupera il valore inserito nell'input
+      var stringa = document.getElementById("inputStringa").value;
+      // Calcola la lunghezza usando la proprietà .length
+      var lunghezza = stringa.length;
+      // Visualizza il risultato nell'elemento con id "risultato"
+      document.getElementById("risultato").innerText = "La lunghezza della stringa è: " + lunghezza;
+    }
+  </script>
+</head>
+<body>
+  <h1>Esercizio 1: Calcola la Lunghezza della Stringa</h1>
+  <form onsubmit="calcolaLunghezza(); return false;">
+    <label for="inputStringa">Inserisci una stringa:</label>
+    <input type="text" id="inputStringa" name="inputStringa" required>
+    <button type="submit">Calcola</button>
+  </form>
+  <p id="risultato"></p>
+</body>
+</html>
